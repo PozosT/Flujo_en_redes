@@ -29,6 +29,10 @@ jupyter-book build .
 # Abrir _build/html/index.html
 ```
 
+## Agradecimientos
+
+Estas notas han sido creadas con base en el material histórico del profesor Andrés Medaglia, el profesor Camilo Gómez y otros instructores que han trabajado en el aula de Flujo en Redes en los años recientes.
+
 ## Licencia
 
 MIT © 2026 Alejandra Tabares
