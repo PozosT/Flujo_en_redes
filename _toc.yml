@@ -4,33 +4,32 @@
 format: jb-book
 root: SyllabusFlujoEnRedes
 parts:
-- caption: Semana 1
+- caption: "Semana 1: Introducción y Motivación"
   chapters:
   - file: Class_1_Introduction_Motivation/1-Introduction
   - file: Class_1_Introduction_Motivation/2-Project
   - file: Class_1_Introduction_Motivation/3-Graphs
-- caption: Semana 2
+- caption: "Semana 2: Herramientas Computacionales (Gurobi)"
   chapters:
   - file: Class_2_Gurobi/1-Hello_word_diet_problem
   - file: Class_2_Gurobi/2-Implicit_formulation
   - file: Class_2_Gurobi/3-Exercice
   - file: Class_2_Gurobi/4-Generalizing_Diet_Problem
-- caption: Semana 3
+- caption: "Semana 3: Redes como Programas Lineales"
   chapters:
   - file: Class_3_Network_as_LP/1-Introduction
   - file: Class_3_Network_as_LP/2-Network_representation
   - file: Class_3_Network_as_LP/3-Network_transformations
-- caption: Semana 4
+- caption: "Semana 4: Método Símplex en Redes"
   chapters:
   - file: Class_4_Simplex/1-Simplex_for_Network_Flow
   - file: Class_4_Simplex/2-Simplex_cicling_pivot
   - file: Class_4_Simplex/3-Simplex_acotado
-- caption: Semana 5
+- caption: "Semana 5: Problema de Transporte"
   chapters:
   - file: Class_5_Transport/1-Simplex_Transport
   - file: Class_5_Transport/2-Simplex_Transport_implementation
   - file: Class_5_Transport/3-Simplex_Transport_acotado
-- caption: Semana 6
+- caption: "Semana 6: Problema de Asignación"
   chapters:
   - file: Class_6_Assignment/1-Assignment_problem
-

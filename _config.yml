@@ -1,9 +1,15 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Flujo en Redes 202302
-author: Alejandra Tabares
+title: Flujo en Redes
+author: David Álvarez-Martínez y Alejandra Tabares
+logo: Images/opti.png
+description: >
+  Notas de aula del curso de Optimización en Flujo en Redes.
+  Departamento de Ingeniería Industrial, Universidad de los Andes.
 
+# Language
+language: es
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -11,24 +17,56 @@ execute:
   execute_notebooks: off
   timeout: -1
 
-
 # Define the name of the latex output file for PDF builds
 latex:
   latex_documents:
     targetname: book.tex
 
-
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/tabarespozos/Flujo_en_redes_202302  # Online location of your book
-  branch: Flujo_en_redes_202302  # Which branch of the repository should be used when creating links (optional)
+  url: https://github.com/PozosT/Flujo_en_redes
+  branch: main
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   use_issues_button: true
   use_repository_button: true
+  use_edit_page_button: false
+  home_page_in_navbar: true
+  favicon: Images/opti.png
+  extra_css:
+    - _static/custom.css
+  extra_footer: |
+    <p>
+      Departamento de Ingeniería Industrial &mdash; Universidad de los Andes<br/>
+      Contenido bajo licencia <a href="https://opensource.org/licenses/MIT">MIT</a>.
+    </p>
 
 launch_buttons:
   colab_url: "https://colab.research.google.com"
 
+# Parse and render settings
+parse:
+  myst_enable_extensions:
+    - amsmath
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_image
+  myst_url_schemes: [mailto, http, https]
+
+# HTML theme options
+sphinx:
+  extra_extensions:
+    - sphinx_togglebutton
+  config:
+    html_theme_options:
+      repository_url: https://github.com/PozosT/Flujo_en_redes
+      use_repository_button: true
+      use_issues_button: true
+      use_download_button: true
+      show_toc_level: 2
+      navigation_with_keys: true
+      logo_only: false
+    language: es
